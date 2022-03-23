@@ -16,8 +16,11 @@ Creación de las tres carpetas hijas de APLI (WORD, ACCESS, EXCEL):
 `md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\EXCEL"`
 
 Creación de las tres carpetas hijas de PROG (BASIC, PASCAL, FORTRAN):
+
 `md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\BASIC"`
+
 `md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\PASCAL"`
+
 `md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\FORTRAN"`
 
 Creación de las dos carpetas hijas de WORD (TEXTO, NOTAS):
