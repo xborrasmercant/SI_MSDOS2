@@ -104,9 +104,11 @@ Mostramos el contenido de la carpeta D (raíz):
 ## EJERCICIO 2
 ### 1. Utilizando el editor de textos de MS-DOS, crea un archivo de texto denominado EJER.TXT, con el siguiente contenido, y almacénalo dentro de la carpeta TEXTOS (dentro de la estructura del ejercicio anterior):
 Nos situamos en la carpeta TEXTO:
+
 `cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\WORD\TEXTOS"`
 
 Una vez situados en la carpeta TEXTOS ejecutamos el siguiente comando para crear el archivo EJER.TXT en su interior:
+
 `copy con EJER.TXT`
 
 Después de ejecutar el comando deberemos escribir el contenido de este archivo de texto:
