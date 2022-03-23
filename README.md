@@ -140,7 +140,103 @@ Una vez situados en la carpeta TEXTOS ejecutamos el siguiente comando para crear
 `copy con EJER.TXT`
 
 Después de ejecutar el comando deberemos escribir el contenido de este archivo de texto:
+
 *"La información dentro de los discos se almacena en forma de archivos. Un archivo o fichero es un conjunto de datos que MS-DOS almacena en un disco y cuyo control interno es realizado por el sistema operativo, aunque desde el punto de vista lógico el control es del usuario"*
 
 
+### 2. Copia el archivo EJER.TXT en AGENDA:
+Nos situamos en TEXTOS:
 
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\WORD\TEXTOS"`
+
+Copiamos el archivo y lo pegamos en AGENDA con el siguiente comando:
+
+`copy EJER.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA"`
+
+
+### 3. Borra el archivo almacenado en la carpeta TEXTOS:
+Nos situamos en TEXTOS:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\WORD\TEXTOS"`
+
+Borramos el archivo EJER.TXT:
+
+`del /s /q "EJER.txt"`
+
+
+### 4. Añade el siguiente párrafo al archivo EJER.TXT:
+Nos situamos en AGENDA:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA"`
+
+Editamos EJER.TXT con el comando:
+
+`notepad ejer`
+
+Y a continuación, dentro del bloc de notas, escribimos el texto que queramos añadir:
+
+*“Cada archivo tiene un nombre y una extensión que los distingue del resto de archivos”*
+
+
+### 5. Copia el archivo EJER.TXT en la carpeta BASIC:
+Nos situamos en AGENDA:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA"`
+
+Copiamos el archivo y lo pegamos en BASIC con el siguiente comando:
+
+`copy EJER.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\BASIC"`
+
+### 6. Cambia el nombre del archivo almacenado en AGENDA por FICHERO.TXT
+Nos situamos en AGENDA:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA "`
+
+Renombramos EJER.TXT a FICHERO.TXT:
+
+`rename "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA\EJER.TXT" FICHERO.TXT`
+
+### 7. Mueve el archivo FICHERO.TXT a la carpeta BASIC:
+Nos situamos en AGENDA:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA"`
+
+Movemos el archivo FICHERO.TXT a la carpeta BASIC:
+
+`move FICHERO.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\BASIC"`
+
+### 8. Abre el archivo EJER.TXT y borra la primera frase; almacena el nuevo archivo con el nombre NUEVO.TXT dentro de la carpeta BASIC:
+Nos situamos en BASIC:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\BASIC"`
+
+Abrimos el archivo EJER.TXT con el siguiente comando, borramos la primera frase y guardamos el archivo modificado como NUEVO.TXT:
+
+`notepad ejer`
+
+### 9. Copia el archivo NUEVO.TXT en la carpeta NOTAS:
+Nos situamos en BASIC:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\BASIC"`
+
+Copiamos el archivo y lo pegamos en NOTAS con el siguiente comando:
+
+`copy NUEVO.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\WORD\NOTAS"`
+
+### 10. ¿Cuántos archivos hay en la carpeta BASIC? ¿Y en NOTAS?
+Vemos cuántos archivos hay en BASIC con el comando:
+
+`dir /a:-d /s /b "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\PROG\BASIC" | find /c ":"`
+
+*Aparecen 3 archivos*
+
+Vemos cuántos archivos hay en NOTAS con el comando:
+
+`dir /a:-d /s /b "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\WORD\NOTAS" | find /c ":"`
+
+*Aparece 1 archivo*
+
+
+
+## EJERCICIO 3
+### 1. Borra la carpeta ACCESS y en su lugar crea una nueva carpeta llamada ASTRO:
