@@ -1,4 +1,5 @@
-# Sistemas Informáticos - Práctica 2 MS-DOS
+# Sistemas Informáticos - Práctica 2 MS-DOS - Xavier Borrás Mercant
+
 ## EJERCICIO 1
 ### 1. Crea la siguiente estructura de carpetas:
 
@@ -240,3 +241,213 @@ Vemos cuántos archivos hay en NOTAS con el comando:
 
 ## EJERCICIO 3
 ### 1. Borra la carpeta ACCESS y en su lugar crea una nueva carpeta llamada ASTRO:
+Borramos la carpeta ACCESS:
+
+`rd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ACCESS"`
+
+Creamos la nueva carpeta llamada ASTRO:
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO"`
+### 2. Crea la siguiente estructura de subcarpetas dentro de la carpeta ASTRO:
+Creación de Historia sus subcarpetas:
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA"`
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\DATOS1"`
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\DATOS2"`
+
+Creación de Ciencia y sus subcarpetas:
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA\ASTRO1"`
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA\ASTRO2"`
+
+### 3. Sitúate en la carpeta CIENCIA y desde allí muestra el listado de archivos y subcarpetas de la carpeta HISTORIA
+`Nos situamos en la carpeta CIENCIA:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+Mostramos el contenido de la carpeta HISTORIA:
+
+`dir "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA"`
+
+### 4. Utilizando el editor de MS-DOS crea el siguiente archivo de texto y guárdalo con el nombre TYCHO.TXT dentro de la carpeta DATOS1
+Nos situamos en la carpeta DATOS1:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS1"`
+
+Una vez situados en la carpeta DATOS1 ejecutamos el siguiente comando para crear el archivo TYCHO.TXT en su interior:
+
+`copy con TYCHO.TXT`
+
+Después de ejecutar el comando deberemos escribir el contenido de este archivo de texto:
+
+*“La importancia de Tycho Brahe (1546-1601) es debida a sus trabajos observacionales, que registraron posiciones notables del Sol, la Luna y los planetas”*
+
+
+### 5. Utilizando de nuevo el editor de textos de MS-DOS crea el siguiente archivo de texto, y guárdalo con el nombre KEPLER.TXT dentro de la carpeta DATOS2
+Nos situamos en la carpeta DATOS2:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS2"`
+
+Una vez situados en la carpeta DATOS2 ejecutamos el siguiente comando para crear el archivo KEPLER.TXT en su interior:
+
+`copy con KEPLER.TXT`
+
+Después de ejecutar el comando deberemos escribir el contenido de este archivo de texto:
+
+*“La información acumulada facilitó a Johannes Kepler (1571-1630) el descubrimiento de las leyes que gobiernan el movimiento de los planetas”*
+
+### 6. Copia los archivos TYCHO.TXT y KEPLER.TXT en la carpeta CIENCIA
+Nos situamos en DATOS1:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS1"`
+
+Copiamos el archivo y lo pegamos en CIENCIA con el siguiente comando:
+
+`copy TYCHO.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+Nos situamos en DATOS2:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS2"`
+
+Copiamos el archivo y lo pegamos en CIENCIA con el siguiente comando:
+
+`copy KEPLER.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+### 7. Cambia de lugar los archivos almacenados en DATOS1 y DATOS2 de forma que TYCHO.TXT quede guardado dentro DATOS2 y KEPLER.TXT en DATOS1
+
+Nos situamos en DATOS1:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS1"`
+
+Movemos el archivo TYCHO.TXT a la carpeta DATOS2:
+
+`move TYCHO.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS2"`
+
+Nos situamos en DATOS2:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS2"`
+
+Movemos el archivo KEPLER.TXT a la carpeta DATOS2:
+
+`move KEPLER.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA\DATOS1"`
+
+### 8. Crea un nuevo archivo formado por la unión de los dos anteriores (sin volver a escribir el texto) y guárdalo dentro de la carpeta HISTORIA con el nombre TOTAL.TXT
+
+Nos situamos en la carpeta CIENCIA:
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+Unimos los dos archivos en un mismo archivo llamado TOTAL.TXT
+`copy *.txt TOTAL.TXT`
+
+Movemos el archivo a HISTORIA:
+`move TOTAL.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\HISTORIA"`
+
+### 9. Abre el archivo KEPLER.TXT almacenado en la carpeta CIENCIA y añade el siguiente texto:
+
+Nos situamos en la carpeta CIENCIA:
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+Abrimos el archivo KEPLER.TXT:
+
+`notepad kepler`
+
+Añadimos el siguiente texto:
+*“Kepler aplicó sus teorías a los satélites de Júpiter, descubiertos por Galileo a través de un pequeño telescopio, cuya introducción en la observación astronómica constituye uno de los hitos de la astronomía.”*
+
+### 10. Cambia el nombre del archivo anterior por el de GALILEO.TXT
+
+Nos situamos en la carpeta CIENCIA:
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\ASTRO\CIENCIA"`
+
+Renombramos el archivo de KEPLER.TXT a GALILEO.TXT:
+`rename KEPLER.TXT GALILEO.TXT`
+
+# EJERCICIO 4
+### 1. Crea en la carpeta raíz de la unidad A: una carpeta denominada TECINFO
+
+Creación de la carpeta base (A):
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A"`
+
+Creamos la carpeta llamada TECINFO:
+
+`md "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO"`
+
+### 2. Crea dentro de TECINFO el siguiente archivo de texto y llámalo HARD.TXT
+
+Nos situamos en la carpeta TECINFO:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO"`
+
+Una vez situados en la carpeta TECINFO ejecutamos el siguiente comando para crear el archivo HARD.TXT en su interior:
+
+`copy con HARD.TXT`
+
+Después de ejecutar el comando deberemos escribir el contenido de este archivo de texto:
+
+*“El HARDWARE está constituido por los elementos físicos del ordenador. Consta esencialmente de componentes electrónicos que proporcionan el soporte necesario para la interpretación y ejecución de las operaciones elementales que realiza el ordenador”*
+
+### 3. Crea dentro de TECINFO el siguiente archivo de texto y llámalo SOFT.TXT
+
+Nos situamos en la carpeta TECINFO:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO"`
+
+Una vez situados en la carpeta TECINFO ejecutamos el siguiente comando para crear el archivo SOFT.TXT en su interior:
+
+`copy con SOFT.TXT`
+
+Después de ejecutar el comando deberemos escribir el contenido de este archivo de texto:
+
+*“El SOFTWARE es el conjunto de elementos lógicos necesarios para que el ordenador realice las funciones que se le encomiendan. Está formado por los programas, es decir, por un conjunto ordenado de instrucciones, comprensibles por la máquina, que permiten desarrollar tareas concretas”*
+
+### 4. Mueve el contenido de TECINFO a la carpeta APLI del disquete A utilizado para realizar los ejercicios anteriores
+
+Movemos HARD.TXT:
+
+`move "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO\SOFT.txt" "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI"`
+
+Movemos SOFT.TXT:
+
+`move "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO\SOFT.txt" "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI"`
+
+### 5. Crea un nuevo archivo formado por la unión de HARD.TXT y SOFT.TXT, sin volver a escribir el texto, y guárdalo en la carpeta AGENDA con el nombre ORDER.TXT
+Nos situamos en la carpeta TECINFO:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO"`
+
+Unimos los dos archivos en un mismo archivo llamado ORDER.TXT
+`copy *.txt ORDER.TXT`
+
+Movemos el archivo a AGENDA:
+`move ORDER.TXT "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENDA"`
+### 6. Elimina la carpeta TECINFO
+`rd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\A\TECINFO /s"`
+
+### 7. Copia a la vez los archivos HARD.TXT y SOFT.TXT en la carpeta VARIOS
+
+Copiamos los archivos .txt del directorio APLI:
+
+`copy "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\APLI\*.*" "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS"`
+
+### 8. Cambia la extensión de los archivos contenidos en AGENDA por .TYP
+Nos situamos en AGENDA:
+
+`cd "C:\Users\Usuario\Documents\DAM\SistemasInformaticos\MSDOS2\D\VARIOS\AGENA"`
+
+Renombramos todos los archivos .TXT a .TYP:
+
+`ren *.txt *.typ`
+
+### 9. Cambia la primera letra del nombre de todos los archivos del directorio APLI que empiecen por la letra C y tengan extensión DOC de forma que empiecen con la letra S
+
+No hay ningun archivo .DOC ni que empiece por C en APLI.
+
+### 10. Copia los archivos contenidos en la carpeta APLI que tengan extensión DOC en la carpeta AGENDA
+
+No hay ningun archivo .DOC en APLI.
